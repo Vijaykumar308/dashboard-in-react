@@ -1,5 +1,9 @@
 import React from 'react';
 import "./topbar.css";
+import { NotificationAdd } from '@mui/icons-material';
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import SettingsIcon from '@mui/icons-material/Settings';
+import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import profile_pic from "../../images/profile_pic.jpg"; 
 function topbar() {
   return (
@@ -10,8 +14,15 @@ function topbar() {
             </div>
             <div className="topRight">
                 <div className="topbarIcons">
-                   <span>Notification</span>
+                   <NotificationsNoneIcon/>
                 </div>
+                <div className="topbarIcons">
+                   <SettingsIcon />
+                </div>
+                <div className="topbarIcons">
+                   <BookmarkBorderIcon />
+                </div>
+               
                 <img src={profile_pic} alt="profile-pic" className='topAvatar' />
             </div>
         </div>

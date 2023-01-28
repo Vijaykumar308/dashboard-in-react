@@ -1,5 +1,6 @@
 import "./sidebar.css";
-
+import { Home, Analytics, AutoGraph,AttachMoney } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 export default function Sidebar() {
   return (
     <div className="sidebar">
@@ -7,24 +8,26 @@ export default function Sidebar() {
             <div className="sidebarMenu">
                 <h3 className="sidebarTitle">Dashboard</h3>
                 <ul className="sidebarList">
-                    <li className="sidebarListItem">
-                        <span className="sidebar-icons">icon</span>
+                   <Link to="/" >
+                    <li className="sidebarListItem active">
+                        <Home className="sidebar-icons" />
                         Home
                     </li>
-
+                    </Link>
+                    <Link to="/users">
                     <li className="sidebarListItem">
-                        <span className="sidebar-icons">icon</span>
+                        <Analytics className="sidebar-icons" />
                         Analytics
                     </li>
-
+                    </Link>
                     <li className="sidebarListItem">
-                        <span className="sidebar-icons">icon</span>
+                        <AttachMoney className="sidebar-icons" />
                         Sales
                     </li>
 
                     <li className="sidebarListItem">
-                        <span className="sidebar-icons">icon</span>
-                        About us
+                        <AutoGraph className="sidebar-icons" />
+                        Statistics
                     </li>
                 </ul>
             </div>
