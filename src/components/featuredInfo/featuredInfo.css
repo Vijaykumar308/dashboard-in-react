@@ -4,6 +4,7 @@
     justify-content: space-between;
 }
 .featuredItem{
+    background-color: #fff;
     flex: 1;
     margin: 0px 20px;
     padding: 30px;

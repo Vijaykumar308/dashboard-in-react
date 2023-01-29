@@ -1,6 +1,5 @@
 import React from 'react';
 import "./topbar.css";
-import { NotificationAdd } from '@mui/icons-material';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import SettingsIcon from '@mui/icons-material/Settings';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';

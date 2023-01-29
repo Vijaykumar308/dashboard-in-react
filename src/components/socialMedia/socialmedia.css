@@ -1,0 +1,40 @@
+.socialMedia-full{
+    width: 30%;
+    max-width: 43%;
+    margin: 30px 20px;
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,.75); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+.socialMedia-icon{
+    width: 100%;
+    min-height: 10vh;
+    border-radius: 10px;
+}
+.socialMedia-icon .icon {
+    padding: 20px 0px;
+    width: 100%;
+    font-size: 50px;
+    border-radius: 5px 5px 0px 0px;
+    color: #fff;
+    background-color: #3b5998;
+}
+.contant{
+    width: 100%;
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-around;
+}
+.contant > div{
+    text-align: center;
+}
+.text{
+    font-weight: 300;
+    font-size: 23px;
+}
+.num{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
