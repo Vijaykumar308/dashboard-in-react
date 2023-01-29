@@ -1,7 +1,11 @@
-.featured{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.arrow{
+    margin-left: 5px;
+}
+.upArrow{
+    color: green;
+}
+.downArrow{
+    color: red;
 }
 .featuredItem{
     background-color: #fff;
@@ -9,7 +13,6 @@
     margin: 0px 20px;
     padding: 30px;
     border-radius: 10px;
-    cursor: pointer;
     box-shadow: 0px 0px 15px -10px rgba(0,0,0,.75); 
 }
 .featuredTitle{

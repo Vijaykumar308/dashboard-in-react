@@ -3,12 +3,21 @@
     background-color: rgba(237, 237, 237,.2);
     padding: 40px 0;
 }
+.featured{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 .socialMedia-container{
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(4,1fr);
 }
-@media (max-width: 750px) {
+@media (max-width: 956px) {
+    .featured{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
     .socialMedia-container{
         grid-template-columns: repeat(2,1fr);
     }

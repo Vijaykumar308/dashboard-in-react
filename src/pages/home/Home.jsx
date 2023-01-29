@@ -4,12 +4,39 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FeaturedInfo from "../../components/featuredInfo/FeaturedInfo";
 import Socialmedia from "../../components/socialMedia/Socialmedia";
+
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import "./home.css";
 
 export default function Home() {
   return (
     <div className='home'>
-        <FeaturedInfo />
+      <div className="featured">
+        <FeaturedInfo 
+          heading="Revanue"
+          price="$2,415"
+          rate="-11.4"
+          title= "Compared to last month"
+          icon={<ArrowDownwardIcon className="arrow downArrow"/>}
+        />
+       <FeaturedInfo 
+          heading="Sales"
+          price="$4,454"
+          rate="-1.4"
+          title= "Compared to last month"
+          icon={<ArrowDownwardIcon className="arrow downArrow"/>}
+        />
+
+        <FeaturedInfo 
+          heading="Cost"
+          price="$2,023"
+          rate="+2.1"
+          title= "Compared to last month"
+          icon={<ArrowUpwardIcon className="arrow upArrow"/>}
+        />
+      </div>
+
         <div className="socialMedia-container">
           <Socialmedia 
             name="facebook"

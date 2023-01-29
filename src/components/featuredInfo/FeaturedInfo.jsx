@@ -1,33 +1,14 @@
 import "./featuredInfo.css"
-export default function FeaturedInfo() {
+export default function FeaturedInfo(props) {
   return (
-    <div className="featured">
         <div className="featuredItem">
-            <span className="featuredTitle">Revanue</span>
+            <span className="featuredTitle">{props.heading}</span>
             <div className="featuredMoneyContainer">
-                <span className="featuredMoeny">$2,415</span>
-                <span className="featuredMoenyRate">-11.4</span>
+                <span className="featuredMoeny">{props.price}</span>
+                <span className="featuredMoenyRate">{props.rate}</span>
+                {props.icon}
             </div>
-            <span className="featuredSub">Compared to last month</span>
+            <span className="featuredSub">{props.title}</span>
         </div>
-
-        <div className="featuredItem">
-            <span className="featuredTitle">Revanue</span>
-            <div className="featuredMoneyContainer">
-                <span className="featuredMoeny">$2,415</span>
-                <span className="featuredMoenyRate">-11.4</span>
-            </div>
-            <span className="featuredSub">Compared to last month</span>
-        </div>
-
-        <div className="featuredItem">
-            <span className="featuredTitle">Revanue</span>
-            <div className="featuredMoneyContainer">
-                <span className="featuredMoeny">$2,415</span>
-                <span className="featuredMoenyRate">-11.4</span>
-            </div>
-            <span className="featuredSub">Compared to last month</span>
-        </div>
-    </div> 
   )
 }
