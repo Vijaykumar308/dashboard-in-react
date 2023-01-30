@@ -1,0 +1,41 @@
+.accordian {
+    width: 90%;
+    margin: 23px 30px;
+    background: #fff;
+    padding: 15px 24px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 4px 2px 9px rgb(0 0 0 / 10%);
+}
+.title {
+    font-weight: 300;
+    padding: 14px 0px;
+    letter-spacing: 1px;
+}
+.line{
+    background: #b9b1b1;
+    margin: 0px -23px;
+    border-width: 1px;
+}
+.details{
+    margin: 15px 0px;
+}
+
+.details-title {
+    padding: 6px 0px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.detail-name {
+    text-indent: 30px;
+    line-height: 28px;
+    color: #58718a;
+    text-align: justify;
+}
+.duration{
+    display: block;
+    text-indent: 0;
+    font-weight: 700;
+}
