@@ -22,10 +22,10 @@ export default function Sidebar() {
                         </li>
                     </Link>
 
-                    <Link to="users">
+                    <Link to="projects">
                         <li className="sidebarListItem">
                             <AttachMoney className="sidebar-icons" />
-                            Users
+                            Projects
                         </li>
                     </Link>
                     <Link to="">

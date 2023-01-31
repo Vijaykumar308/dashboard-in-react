@@ -2,7 +2,7 @@ import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/topbar";
 import "./app.css";
 import Home from "./pages/home/Home";
-import UserList from "./pages/userList/UserList";
+import Projects from "./pages/projects/Projects";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutMe from "./pages/aboutMe/AboutMe";
 function App() {
@@ -14,8 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element= {<Home />} />
           <Route path="/about" element= {<AboutMe />} />
-          <Route path="/users" element= {<UserList />} />
-
+          <Route path="/projects" element= {<Projects />} />
         </Routes>
       </div>
 
