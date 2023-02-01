@@ -12,12 +12,12 @@ export default function  Projects() {
     <div className='projects'>
         <h3 className="heading">Projects</h3>
       <div className="project-wrapper">
+
        <ProjectCard
           image={timeCalculator}
           projectTitle="Time Calculator"
           projectDescription="Time calculator is a simple app to calculate 5 days time. Basically it is used for working professinal who's has to complete their time for the week."
           duration="2 Weeks"
-
         />
 
         <ProjectCard
@@ -41,10 +41,11 @@ export default function  Projects() {
         />
         <ProjectCard
           image={gameProject}
-          projectTitle="Gass The Numbar"
+          projectTitle="Guess The Numbar"
           projectDescription="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis "
           duration="2 Weeks"
         />
+
         <ProjectCard
           image={eboots}
           projectTitle="Web Template clone"
