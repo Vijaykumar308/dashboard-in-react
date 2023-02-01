@@ -1,5 +1,4 @@
 import "./projectcard.css";
-import lavolator from "../../images/lavulator.png";
 export default function ProjectCard(props) {
   return (
     <div className='project-card'>
