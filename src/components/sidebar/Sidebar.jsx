@@ -1,57 +1,47 @@
 import "./sidebar.css";
 import { Home, Analytics, AutoGraph,AttachMoney } from "@mui/icons-material";
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import { NavLink } from "react-router-dom";
 export default function Sidebar() {
-    let [active,setActive] = useState(0);
 
-    let styles = {
-        backgroundColor: "rgb(240, 240, 255)",
-        color: "#000"
-    }
-    function handlerClick(id) {
-        setActive(active = id);
-    }
-    
   return (
     <div className="sidebar">
         <div className="sidebarWrapper">
             <div className="sidebarMenu">
                 <h3 className="sidebarTitle">Dashboard</h3>
                 <ul className="sidebarList">
-                   <Link to="/">
-                        <li className="sidebarListItem" onClick={() => handlerClick(0)} style={(active === 0) ? styles : {} }>
+                   <NavLink to="/">
+                        <li className="sidebarListItem">
                             <Home className="sidebar-icons"/>
                             Home
                         </li>
-                    </Link>
+                    </NavLink>
 
-                    <Link to="/about">
-                        <li className="sidebarListItem" onClick={() => handlerClick(1)}  style={(active === 1) ? styles : {} }>
+                    <NavLink to="/about">
+                        <li className="sidebarListItem">
                             <Analytics className="sidebar-icons" />
                             About Me
                         </li>
-                    </Link>
+                    </NavLink>
 
-                    <Link to="projects">
-                        <li className="sidebarListItem" onClick={() => handlerClick(2)}  style={(active === 2) ? styles : {} }>
+                    <NavLink to="projects">
+                        <li className="sidebarListItem">
                             <AttachMoney className="sidebar-icons" />
                             Projects
                         </li>
-                    </Link>
-                    <Link to="readmore">
-                        <li className="sidebarListItem" onClick={() => handlerClick(3)}  style={(active === 3) ? styles : {} } >
+                    </NavLink>
+                    <NavLink to="readmore">
+                        <li className="sidebarListItem">
                             <AutoGraph className="sidebar-icons" />
                             Read more
                         </li>
-                    </Link>
+                    </NavLink>
 
-                    <Link to="nested-route">
-                        <li className="sidebarListItem" onClick={() => handlerClick(4)}  style={(active === 4) ? styles : {} } >
+                    <NavLink to="nested-route">
+                        <li className="sidebarListItem">
                             <AutoGraph className="sidebar-icons"/>
                             Nested Route
                         </li>
-                    </Link>
+                    </NavLink>
                 </ul>
             </div>
         </div>

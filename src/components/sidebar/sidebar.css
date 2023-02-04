@@ -40,6 +40,10 @@ a{
     margin-right: 5px;
     font-size: 14px;
 }
+.active > *{
+    background-color: rgb(240, 240, 255);
+    color: #000;
+}
 .sidebarListItem.active,
 .sidebarListItem:hover{
     background-color: rgb(240, 240, 255);
