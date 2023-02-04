@@ -7,10 +7,15 @@
     border-radius: 5px;
     box-shadow: 4px 2px 9px rgb(0 0 0 / 10%);
 }
+.icon-title{
+    display: flex;
+    align-items: center;
+}
 .title {
     font-weight: 300;
     padding: 14px 0px;
     letter-spacing: 1px;
+    margin-left: 10px;
 }
 .line{
     background: #b9b1b1;

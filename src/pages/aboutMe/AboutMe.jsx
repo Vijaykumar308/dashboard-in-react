@@ -1,3 +1,6 @@
+import { School } from "@mui/icons-material";
+import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
+import SentimentVerySatisfiedIcon from '@mui/icons-material/SentimentVerySatisfied';
 import Accordian from "../../components/Accordian/Accordian";
 import "./aboutme.css";
 
@@ -8,6 +11,7 @@ export default function AboutMe() {
       <div className="wrapper">
           <Accordian
             heading="Education"
+            labelIcon={<School/>}
             title1= "Degree"
             title2 = "Courses"
             para1="Bachelor of Computer Application"
@@ -18,6 +22,7 @@ export default function AboutMe() {
            <Accordian
             heading="Skills"
             title1= "Web Development"
+            labelIcon={<SentimentSatisfiedAltIcon/>}
             para1="HTML, CSS, Javascipt, React, PHP, MySQL"
             duration1="Duration: 1.5 Years"
             title2= "Fundamentals"
@@ -27,6 +32,7 @@ export default function AboutMe() {
           
           <Accordian 
             heading="Experience"
+            labelIcon={<SentimentVerySatisfiedIcon/>}
             title1="Kochar Tech"
             para1="I'm working here since the last year 2022, Working as a Backend Developer where my role & responsibilities are to make modules for the application and fixed bugs for the smooth working application."
             duration1="Experince: 1 Year"
