@@ -42,7 +42,14 @@ export default function Sidebar() {
                     <Link to="readmore">
                         <li className="sidebarListItem" onClick={() => handlerClick(3)}  style={(active === 3) ? styles : {} } >
                             <AutoGraph className="sidebar-icons" />
-                            Statistics
+                            Read more
+                        </li>
+                    </Link>
+
+                    <Link to="nested-route">
+                        <li className="sidebarListItem" onClick={() => handlerClick(4)}  style={(active === 4) ? styles : {} } >
+                            <AutoGraph className="sidebar-icons"/>
+                            Nested Route
                         </li>
                     </Link>
                 </ul>

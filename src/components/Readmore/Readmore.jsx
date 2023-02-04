@@ -2,7 +2,11 @@ import "./readmore.css";
 import featuedImg from "../../images/e-boots.png";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
+
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 export default function Readmore() {
+    const navigate = useNavigate();
   return (
     <div className='projects'>
         <h3 className="heading">Read More</h3>
@@ -28,8 +32,8 @@ export default function Readmore() {
                 <p className="para">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quas sapiente ad facere reprehenderit illum consequuntur, ab nostrum quo voluptates enim earum atque commodi vitae itaque, placeat libero velit fugit provident in consequatur repellat expedita dolore! Quae commodi velit iusto quidem tempora voluptatum, mollitia quasi officia voluptate dicta ossimus facere laboriosam voluptatum voluptates alias sequi recusandae delectus sunt unde earum dolorem
                 </p>
+                <Button variant="outlined" onClick={()=>navigate(-1)}>Go Back</Button>
             </div>
-
         </div>
     </div>
   )
