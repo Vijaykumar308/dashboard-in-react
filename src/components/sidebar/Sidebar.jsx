@@ -39,7 +39,7 @@ export default function Sidebar() {
                             Projects
                         </li>
                     </Link>
-                    <Link to="">
+                    <Link to="readmore">
                         <li className="sidebarListItem" onClick={() => handlerClick(3)}  style={(active === 3) ? styles : {} } >
                             <AutoGraph className="sidebar-icons" />
                             Statistics
