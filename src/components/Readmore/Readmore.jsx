@@ -1,10 +1,8 @@
 import "./readmore.css";
 import featuedImg from "../../images/e-boots.png";
-import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
 
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 export default function Readmore() {
     const navigate = useNavigate();
   return (
@@ -15,13 +13,13 @@ export default function Readmore() {
             <h1 className="title">Title of the project</h1>
 
             <div className="featured-image">
-                <img src={featuedImg} />
+                <img src={featuedImg} alt="featured-img"/>
             </div>
 
             <div className="readmore-contant">
                 <div className="basic-details">
                     <span className="block">Url:
-                        <a href="https://www.google.com" target="_blank">Web-template</a>
+                        <a href="https://www.google.com" target="_blank" rel="noreferrer">Web-template</a>
                     </span>
                     <span className="block">Time taken: 2 weeks</span>
                 </div>

@@ -1,4 +1,3 @@
-import ReadMore from "../../pages/readMore/ReadMore";
 import "./projectcard.css";
 
 export default function ProjectCard(props) {
