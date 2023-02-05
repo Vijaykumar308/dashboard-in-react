@@ -18,7 +18,6 @@
     background-color: #fff;
 }
 .featured-image{
-    background-color: red;
     height: 40vh;
 }
 .featured-image > *{

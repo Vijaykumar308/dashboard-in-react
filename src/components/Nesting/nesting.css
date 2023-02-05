@@ -1,0 +1,11 @@
+.nesting{
+    flex: 4;
+}
+.nav-link{
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+}
+.active{
+    border-bottom: 2px solid black;
+}
