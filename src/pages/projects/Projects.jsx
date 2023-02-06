@@ -6,28 +6,32 @@ import chooseOne from "../../images/choose-one.png";
 import gameProject from "../../images/game-project.png";
 import eboots from "../../images/e-boots.png";
 import "./projects.css"
+import { Link, Outlet } from "react-router-dom";
 
 export default function  Projects() {
   return (
     <div className='projects'>
         <h3 className="heading">Projects</h3>
       <div className="project-wrapper">
-
-       <ProjectCard
-          image={timeCalculator}
-          projectTitle="Time Calculator"
-          projectDescription="Time calculator is a simple app to calculate 5 days time. Basically it is used for working professinal who's has to complete their time for the week."
-          duration="2 Weeks"
-          url="time-calculator"
-        />
-
+      <Link to={"time-calculator"}>
         <ProjectCard
-          image={lavulator}
-          projectTitle="Relationship"
-          projectDescription="This Project is for check the relationship. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
-          duration="1 Week"
-          url="relationship"
-        />
+            image={timeCalculator}
+            projectTitle="Time Calculator"
+            projectDescription="Time calculator is a simple app to calculate 5 days time. Basically it is used for working professinal who's has to complete their time for the week."
+            duration="2 Weeks"
+            url="time-calculator"
+          />
+        </Link>
+
+        <Link to={"relationship"}>
+          <ProjectCard
+            image={lavulator}
+            projectTitle="Relationship"
+            projectDescription="This Project is for check the relationship. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
+            duration="1 Week"
+            url="relationship"
+          />
+        </Link>
         <ProjectCard
           image={clgSite}
           projectTitle="College Site"
