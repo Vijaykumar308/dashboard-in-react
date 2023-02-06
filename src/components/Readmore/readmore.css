@@ -18,7 +18,7 @@
     background-color: #fff;
 }
 .featured-image{
-    height: 40vh;
+    height: 50vh;
 }
 .featured-image > *{
     width: 100%;
@@ -50,6 +50,8 @@
     color: #58718a;
     word-spacing: 4px;
     margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 2;
 }
 @media (max-width: 520px){
     .readmore-wrapper{

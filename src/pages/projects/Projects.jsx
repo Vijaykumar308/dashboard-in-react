@@ -6,36 +6,33 @@ import chooseOne from "../../images/choose-one.png";
 import gameProject from "../../images/game-project.png";
 import eboots from "../../images/e-boots.png";
 import "./projects.css"
-import { Link, Outlet } from "react-router-dom";
 
 export default function  Projects() {
   return (
     <div className='projects'>
         <h3 className="heading">Projects</h3>
       <div className="project-wrapper">
-      <Link to={"time-calculator"}>
+      
         <ProjectCard
             image={timeCalculator}
             projectTitle="Time Calculator"
-            projectDescription="Time calculator is a simple app to calculate 5 days time. Basically it is used for working professinal who's has to complete their time for the week."
+            projectDescription="Time calculator is the simple web application which is helpful to calculate time.
+            Bassically..."
             duration="2 Weeks"
             url="time-calculator"
           />
-        </Link>
-
-        <Link to={"relationship"}>
-          <ProjectCard
+        <ProjectCard
             image={lavulator}
             projectTitle="Relationship"
-            projectDescription="This Project is for check the relationship. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam"
+            projectDescription="This is a simple relationship check program which can be used to check the relationship pecentage. Bassically, There is a algorithm"
             duration="1 Week"
             url="relationship"
           />
-        </Link>
         <ProjectCard
           image={clgSite}
           projectTitle="College Site"
-          projectDescription="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis "
+          projectDescription="This is just webpage design which I created for improve my HTML and CSS
+          For this..."
           duration="3 Weeks"
           url="clg-site"
         />
@@ -43,24 +40,24 @@ export default function  Projects() {
         <ProjectCard
           image={chooseOne}
           projectTitle="Choose One"
-          projectDescription="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis "
+          projectDescription="Choose one is the project which is like a game where we've to choose one famouse personality between the both. This is a responsive "
           duration="3 Weeks"
-          url=""
+          url="choose-one"
         />
         <ProjectCard
           image={gameProject}
           projectTitle="Guess The Numbar"
-          projectDescription="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis "
+          projectDescription="The Guess the number project we've created a lots of time in different-differenet programming language but I thought it would greate "
           duration="2 Weeks"
-          url=""
+          url="guess-the-number"
         />
 
         <ProjectCard
           image={eboots}
           projectTitle="Web Template clone"
-          projectDescription="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis "
+          projectDescription="This website is just for practices my CSS and I improved a lot by created it. I found this template over the internet and then trying to"
           duration="1 Week"
-          url=""
+          url="web-template-clone"
         />
       </div>
     </div>

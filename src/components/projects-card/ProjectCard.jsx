@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./projectcard.css";
 
 export default function ProjectCard(props) {
@@ -11,7 +12,9 @@ export default function ProjectCard(props) {
         <p className="project-descp">{props.projectDescription}</p>
         <div className="readmore-duration">
           <p className="project-duration">{props.duration}</p>
-          <button className="readmore-btn" id={props.url}>Read More...</button>
+          <Link to = {props.url} >
+            <button className="readmore-btn" id={props.url}>Read More...</button>
+          </Link>
         </div>
       </div>
     </div>

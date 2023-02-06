@@ -29,12 +29,12 @@ export default function Sidebar() {
                             Projects
                         </li>
                     </NavLink>
-                    <NavLink to="readmore">
+                    {/* <NavLink to="readmore">
                         <li className="sidebarListItem">
                             <AutoGraph className="sidebar-icons" />
                             Read more
                         </li>
-                    </NavLink>
+                    </NavLink> */}
 
                     <NavLink to="nested-route">
                         <li className="sidebarListItem">

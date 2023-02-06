@@ -1,34 +1,32 @@
 import "./readmore.css";
-import featuedImg from "../../images/e-boots.png";
 import { Button } from "@mui/material";
 
 import { useNavigate } from "react-router-dom";
-export default function Readmore() {
+export default function Readmore(props) {
     const navigate = useNavigate();
   return (
     <div className='projects'>
         <h3 className="heading">Read More</h3>
 
         <div className="readmore-wrapper">
-            <h1 className="title">Title of the project</h1>
+            <h1 className="title">{props.title}</h1>
 
             <div className="featured-image">
-                <img src={featuedImg} alt="featured-img"/>
+                <img src={props.featuredImg} alt="featured-img"/>
             </div>
 
             <div className="readmore-contant">
                 <div className="basic-details">
-                    <span className="block">Url:
-                        <a href="https://www.google.com" target="_blank" rel="noreferrer">Web-template</a>
+                    <span className="block">
+                        <a href={props.websiteLink} target="_blank" rel="noreferrer">
+                            <Button variant="contained">View Project</Button>
+                        </a>
                     </span>
-                    <span className="block">Time taken: 2 weeks</span>
+                    <span className="block">Time taken: {props.timeTaken}</span>
                 </div>
 
                 <p className="para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quas sapiente ad facere reprehenderit illum consequuntur, ab nostrum quo voluptates enim earum atque commodi vitae itaque, placeat libero velit fugit provident in consequatur repellat expedita dolore! Quae commodi velit iusto quidem tempora voluptatum, mollitia quasi officia voluptate dicta ossimus facere laboriosam voluptatum voluptates alias sequi recusandae delectus sunt unde earum dolorem
-                </p>
-                <p className="para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quas sapiente ad facere reprehenderit illum consequuntur, ab nostrum quo voluptates enim earum atque commodi vitae itaque, placeat libero velit fugit provident in consequatur repellat expedita dolore! Quae commodi velit iusto quidem tempora voluptatum, mollitia quasi officia voluptate dicta ossimus facere laboriosam voluptatum voluptates alias sequi recusandae delectus sunt unde earum dolorem
+                    {props.descp}
                 </p>
                 <Button variant="outlined" onClick={()=>navigate(-1)}>Go Back</Button>
             </div>
