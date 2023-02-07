@@ -4,7 +4,7 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import SettingsIcon from '@mui/icons-material/Settings';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import profile_pic from "../../images/profile_pic.jpg"; 
-function topbar() {
+function Topbar() {
   return (
     <div className='topbar'>
         <div className="topbarWrapper">
@@ -29,4 +29,4 @@ function topbar() {
   )
 }
 
-export default topbar;
+export default Topbar;
